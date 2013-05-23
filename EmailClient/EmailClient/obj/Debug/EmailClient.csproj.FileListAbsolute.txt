@@ -1,0 +1,1 @@
+C:\Users\Nicolai\Documents\GitHub\CSharp_Mail_Client\EmailClient\EmailClient\bin\Debug\EmailClient.exe.config
