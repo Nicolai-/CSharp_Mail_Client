@@ -1,7 +1,30 @@
 ﻿<?xml version='1.0' encoding='utf-8'?>
-<SettingsFile xmlns="http://schemas.microsoft.com/VisualStudio/2004/01/settings" CurrentProfile="(Default)">
-  <Profiles>
-    <Profile Name="(Default)" />
-  </Profiles>
-  <Settings />
+<SettingsFile xmlns="http://schemas.microsoft.com/VisualStudio/2004/01/settings" CurrentProfile="(Default)" GeneratedClassNamespace="EmailClient.Properties" GeneratedClassName="Settings">
+  <Profiles />
+  <Settings>
+    <Setting Name="username" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">supermailklient@gmail.com</Value>
+    </Setting>
+    <Setting Name="password" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">csharpmail</Value>
+    </Setting>
+    <Setting Name="smtp_server" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">smtp.gmail.com</Value>
+    </Setting>
+    <Setting Name="pop3_server" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">pop.gmail.com</Value>
+    </Setting>
+    <Setting Name="smtp_port" Type="System.Int32" Scope="Application">
+      <Value Profile="(Default)">465</Value>
+    </Setting>
+    <Setting Name="pop3_port" Type="System.Int32" Scope="Application">
+      <Value Profile="(Default)">995</Value>
+    </Setting>
+    <Setting Name="ssl" Type="System.Boolean" Scope="Application">
+      <Value Profile="(Default)">True</Value>
+    </Setting>
+    <Setting Name="db_file_name" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">mail_db.sqlite</Value>
+    </Setting>
+  </Settings>
 </SettingsFile>
