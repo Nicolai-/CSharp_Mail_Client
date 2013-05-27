@@ -61,12 +61,26 @@
             resources.ApplyResources(this.sendReceive_btn, "sendReceive_btn");
             this.sendReceive_btn.Name = "sendReceive_btn";
             this.sendReceive_btn.UseVisualStyleBackColor = true;
+            this.sendReceive_btn.Click += new System.EventHandler(this.sendReceive_btn_Click);
             // 
             // inboxDataGridView
             // 
+            this.inboxDataGridView.AllowUserToAddRows = false;
+            this.inboxDataGridView.AllowUserToDeleteRows = false;
+            this.inboxDataGridView.AllowUserToOrderColumns = true;
+            this.inboxDataGridView.AllowUserToResizeRows = false;
+            this.inboxDataGridView.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
+            this.inboxDataGridView.BackgroundColor = System.Drawing.SystemColors.ButtonFace;
+            this.inboxDataGridView.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.inboxDataGridView.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.None;
             this.inboxDataGridView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.inboxDataGridView.EditMode = System.Windows.Forms.DataGridViewEditMode.EditProgrammatically;
             resources.ApplyResources(this.inboxDataGridView, "inboxDataGridView");
+            this.inboxDataGridView.MultiSelect = false;
             this.inboxDataGridView.Name = "inboxDataGridView";
+            this.inboxDataGridView.ReadOnly = true;
+            this.inboxDataGridView.ShowEditingIcon = false;
+            this.inboxDataGridView.CellDoubleClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.inboxDataGridView_CellContentDoubleClick);
             // 
             // Form1
             // 
