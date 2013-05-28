@@ -36,6 +36,9 @@ namespace EmailClient
         
         private void inbox_btn_Click(object sender, EventArgs e)
         {
+            Mail_Groupbox.Visible = false;
+            inboxDataGridView.Visible = true;
+
             ActiveWindow = "inbox";
             /* Load empty table and do UI optimization*/
             table = new DataTable();
@@ -83,6 +86,35 @@ namespace EmailClient
             ShowMailWindow = new ShowMail(MailContent["recipient"],MailContent["sender"], MailContent["subject"],MailContent["message"]);
             ShowMailWindow.Show();
 
-        }           
+        }
+
+        private void newMail_btn_Click(object sender, EventArgs e)
+        {
+            Mail_Groupbox.Visible = true;
+            inboxDataGridView.Visible = false;
+        }
+     
+        private void Textbox_MouseClick(object sender, MouseEventArgs e)
+        {
+            Status_textbox.Text = string.Empty;
+        }
+
+        private void Send_Button_Click(object sender, EventArgs e)
+        {
+            bool flag = SMTPClient.Send(To_textbox.Text, Subject_textbox.Text, Message_textbox.Text);
+            if (flag == true)
+            {
+                Status_textbox.Text = "Sucess ! 1 Email send from the nr 1 email client";
+                To_textbox.Text = string.Empty;
+                Subject_textbox.Text = string.Empty;
+                Message_textbox.Text = string.Empty;
+            }
+            else
+            {
+                Status_textbox.Text = "Error ! you fucked up.. sorry...";
+            }
+        }
+   
+
     }
 }

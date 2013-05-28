@@ -141,7 +141,7 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;newMail_btn.ZOrder" xml:space="preserve">
-    <value>4</value>
+    <value>5</value>
   </data>
   <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
   <data name="inbox_btn.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
@@ -169,7 +169,7 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;inbox_btn.ZOrder" xml:space="preserve">
-    <value>3</value>
+    <value>4</value>
   </data>
   <data name="outbot_btn.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
@@ -196,7 +196,7 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;outbot_btn.ZOrder" xml:space="preserve">
-    <value>2</value>
+    <value>3</value>
   </data>
   <data name="sendReceive_btn.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
@@ -223,7 +223,7 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;sendReceive_btn.ZOrder" xml:space="preserve">
-    <value>1</value>
+    <value>2</value>
   </data>
   <data name="inboxDataGridView.Location" type="System.Drawing.Point, System.Drawing">
     <value>29, 107</value>
@@ -233,6 +233,9 @@
   </data>
   <data name="inboxDataGridView.TabIndex" type="System.Int32, mscorlib">
     <value>5</value>
+  </data>
+  <data name="inboxDataGridView.Visible" type="System.Boolean, mscorlib">
+    <value>False</value>
   </data>
   <data name="&gt;&gt;inboxDataGridView.Name" xml:space="preserve">
     <value>inboxDataGridView</value>
@@ -244,6 +247,246 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;inboxDataGridView.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="Send_Button.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Microsoft Sans Serif, 10pt</value>
+  </data>
+  <data name="Send_Button.Location" type="System.Drawing.Point, System.Drawing">
+    <value>596, 45</value>
+  </data>
+  <data name="Send_Button.Size" type="System.Drawing.Size, System.Drawing">
+    <value>146, 46</value>
+  </data>
+  <data name="Send_Button.TabIndex" type="System.Int32, mscorlib">
+    <value>7</value>
+  </data>
+  <data name="Send_Button.Text" xml:space="preserve">
+    <value>Send</value>
+  </data>
+  <data name="&gt;&gt;Send_Button.Name" xml:space="preserve">
+    <value>Send_Button</value>
+  </data>
+  <data name="&gt;&gt;Send_Button.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;Send_Button.Parent" xml:space="preserve">
+    <value>Mail_Groupbox</value>
+  </data>
+  <data name="&gt;&gt;Send_Button.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="Message_Label.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="Message_Label.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Microsoft Sans Serif, 12pt</value>
+  </data>
+  <data name="Message_Label.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="Message_Label.Location" type="System.Drawing.Point, System.Drawing">
+    <value>26, 108</value>
+  </data>
+  <data name="Message_Label.Size" type="System.Drawing.Size, System.Drawing">
+    <value>98, 20</value>
+  </data>
+  <data name="Message_Label.TabIndex" type="System.Int32, mscorlib">
+    <value>6</value>
+  </data>
+  <data name="Message_Label.Text" xml:space="preserve">
+    <value>MESSAGE :</value>
+  </data>
+  <data name="&gt;&gt;Message_Label.Name" xml:space="preserve">
+    <value>Message_Label</value>
+  </data>
+  <data name="&gt;&gt;Message_Label.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;Message_Label.Parent" xml:space="preserve">
+    <value>Mail_Groupbox</value>
+  </data>
+  <data name="&gt;&gt;Message_Label.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="Subject_Label.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="Subject_Label.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Microsoft Sans Serif, 12pt</value>
+  </data>
+  <data name="Subject_Label.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="Subject_Label.Location" type="System.Drawing.Point, System.Drawing">
+    <value>26, 71</value>
+  </data>
+  <data name="Subject_Label.Size" type="System.Drawing.Size, System.Drawing">
+    <value>90, 20</value>
+  </data>
+  <data name="Subject_Label.TabIndex" type="System.Int32, mscorlib">
+    <value>5</value>
+  </data>
+  <data name="Subject_Label.Text" xml:space="preserve">
+    <value>SUBJECT :</value>
+  </data>
+  <data name="&gt;&gt;Subject_Label.Name" xml:space="preserve">
+    <value>Subject_Label</value>
+  </data>
+  <data name="&gt;&gt;Subject_Label.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;Subject_Label.Parent" xml:space="preserve">
+    <value>Mail_Groupbox</value>
+  </data>
+  <data name="&gt;&gt;Subject_Label.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="To_Label.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="To_Label.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Microsoft Sans Serif, 12pt</value>
+  </data>
+  <data name="To_Label.Location" type="System.Drawing.Point, System.Drawing">
+    <value>26, 45</value>
+  </data>
+  <data name="To_Label.Size" type="System.Drawing.Size, System.Drawing">
+    <value>38, 20</value>
+  </data>
+  <data name="To_Label.TabIndex" type="System.Int32, mscorlib">
+    <value>4</value>
+  </data>
+  <data name="To_Label.Text" xml:space="preserve">
+    <value>TO :</value>
+  </data>
+  <data name="&gt;&gt;To_Label.Name" xml:space="preserve">
+    <value>To_Label</value>
+  </data>
+  <data name="&gt;&gt;To_Label.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;To_Label.Parent" xml:space="preserve">
+    <value>Mail_Groupbox</value>
+  </data>
+  <data name="&gt;&gt;To_Label.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="Status_textbox.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Microsoft Sans Serif, 10pt, style=Bold</value>
+  </data>
+  <data name="Status_textbox.Location" type="System.Drawing.Point, System.Drawing">
+    <value>30, 391</value>
+  </data>
+  <data name="Status_textbox.Size" type="System.Drawing.Size, System.Drawing">
+    <value>835, 23</value>
+  </data>
+  <data name="Status_textbox.TabIndex" type="System.Int32, mscorlib">
+    <value>3</value>
+  </data>
+  <data name="Status_textbox.TextAlign" type="System.Windows.Forms.HorizontalAlignment, System.Windows.Forms">
+    <value>Center</value>
+  </data>
+  <data name="&gt;&gt;Status_textbox.Name" xml:space="preserve">
+    <value>Status_textbox</value>
+  </data>
+  <data name="&gt;&gt;Status_textbox.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;Status_textbox.Parent" xml:space="preserve">
+    <value>Mail_Groupbox</value>
+  </data>
+  <data name="&gt;&gt;Status_textbox.ZOrder" xml:space="preserve">
+    <value>4</value>
+  </data>
+  <data name="Subject_textbox.Location" type="System.Drawing.Point, System.Drawing">
+    <value>138, 71</value>
+  </data>
+  <data name="Subject_textbox.Size" type="System.Drawing.Size, System.Drawing">
+    <value>408, 20</value>
+  </data>
+  <data name="Subject_textbox.TabIndex" type="System.Int32, mscorlib">
+    <value>2</value>
+  </data>
+  <data name="&gt;&gt;Subject_textbox.Name" xml:space="preserve">
+    <value>Subject_textbox</value>
+  </data>
+  <data name="&gt;&gt;Subject_textbox.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;Subject_textbox.Parent" xml:space="preserve">
+    <value>Mail_Groupbox</value>
+  </data>
+  <data name="&gt;&gt;Subject_textbox.ZOrder" xml:space="preserve">
+    <value>5</value>
+  </data>
+  <data name="Message_textbox.Location" type="System.Drawing.Point, System.Drawing">
+    <value>30, 131</value>
+  </data>
+  <data name="Message_textbox.Multiline" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="Message_textbox.Size" type="System.Drawing.Size, System.Drawing">
+    <value>835, 254</value>
+  </data>
+  <data name="Message_textbox.TabIndex" type="System.Int32, mscorlib">
+    <value>1</value>
+  </data>
+  <data name="&gt;&gt;Message_textbox.Name" xml:space="preserve">
+    <value>Message_textbox</value>
+  </data>
+  <data name="&gt;&gt;Message_textbox.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;Message_textbox.Parent" xml:space="preserve">
+    <value>Mail_Groupbox</value>
+  </data>
+  <data name="&gt;&gt;Message_textbox.ZOrder" xml:space="preserve">
+    <value>6</value>
+  </data>
+  <data name="To_textbox.Location" type="System.Drawing.Point, System.Drawing">
+    <value>138, 45</value>
+  </data>
+  <data name="To_textbox.Size" type="System.Drawing.Size, System.Drawing">
+    <value>408, 20</value>
+  </data>
+  <data name="To_textbox.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;To_textbox.Name" xml:space="preserve">
+    <value>To_textbox</value>
+  </data>
+  <data name="&gt;&gt;To_textbox.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;To_textbox.Parent" xml:space="preserve">
+    <value>Mail_Groupbox</value>
+  </data>
+  <data name="&gt;&gt;To_textbox.ZOrder" xml:space="preserve">
+    <value>7</value>
+  </data>
+  <data name="Mail_Groupbox.Location" type="System.Drawing.Point, System.Drawing">
+    <value>29, 107</value>
+  </data>
+  <data name="Mail_Groupbox.Size" type="System.Drawing.Size, System.Drawing">
+    <value>899, 430</value>
+  </data>
+  <data name="Mail_Groupbox.TabIndex" type="System.Int32, mscorlib">
+    <value>6</value>
+  </data>
+  <data name="Mail_Groupbox.Visible" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="&gt;&gt;Mail_Groupbox.Name" xml:space="preserve">
+    <value>Mail_Groupbox</value>
+  </data>
+  <data name="&gt;&gt;Mail_Groupbox.Type" xml:space="preserve">
+    <value>System.Windows.Forms.GroupBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;Mail_Groupbox.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;Mail_Groupbox.ZOrder" xml:space="preserve">
     <value>0</value>
   </data>
   <metadata name="$this.Localizable" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
