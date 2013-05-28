@@ -15,7 +15,7 @@
       <Value Profile="(Default)">pop.gmail.com</Value>
     </Setting>
     <Setting Name="smtp_port" Type="System.Int32" Scope="Application">
-      <Value Profile="(Default)">465</Value>
+      <Value Profile="(Default)">587</Value>
     </Setting>
     <Setting Name="pop3_port" Type="System.Int32" Scope="Application">
       <Value Profile="(Default)">995</Value>

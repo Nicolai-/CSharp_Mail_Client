@@ -34,6 +34,9 @@ namespace EmailClient
         
         private void inbox_btn_Click(object sender, EventArgs e)
         {
+            Newmail_groupBox.Visible = false;
+            inboxDataGridView.Visible = true;
+
             ActiveWindow = "inbox";
             /* Load empty table and do UI optimization*/
             table = new DataTable();
@@ -60,7 +63,6 @@ namespace EmailClient
             {
                 dbHandler.InsertMail(mail);
             }
-
         }
 
         private void inboxDataGridView_CellContentDoubleClick(object sender, DataGridViewCellEventArgs e)
@@ -72,6 +74,36 @@ namespace EmailClient
             }
             Debug.WriteLine("Current Row: " + e.RowIndex.ToString());
             Debug.WriteLine("Mail-ID: " + inboxDataGridView.Rows[e.RowIndex].Cells["Mail-ID"].FormattedValue.ToString());
+        }
+
+        private void newMail_btn_Click(object sender, EventArgs e)
+        {
+            Newmail_groupBox.Visible = true;
+            inboxDataGridView.Visible = false;
+        }
+
+        private void Send_Button_Click(object sender, EventArgs e)
+        {
+           
+            
+           bool flag = SMTPClient.Send(To_Textbox.Text, Subject_Textbox.Text, Message_textbox.Text);
+           if (flag == true)
+           {
+               Status_textBox.Text = "Sucess ! 1 Email send from the nr 1 email client";
+               To_Textbox.Text = string.Empty;
+               Subject_Textbox.Text = string.Empty;
+               Message_textbox.Text = string.Empty;
+           }
+           else
+           {
+               Status_textBox.Text = "Error ! you fucked up.. sorry...";
+           }
+
+        }
+
+        private void Textbox_MouseClick(object sender, MouseEventArgs e)
+        {
+            Status_textBox.Text = string.Empty;
         }           
     }
 }

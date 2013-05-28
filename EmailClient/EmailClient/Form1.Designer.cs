@@ -34,7 +34,17 @@
             this.outbot_btn = new System.Windows.Forms.Button();
             this.sendReceive_btn = new System.Windows.Forms.Button();
             this.inboxDataGridView = new System.Windows.Forms.DataGridView();
+            this.Newmail_groupBox = new System.Windows.Forms.GroupBox();
+            this.Status_textBox = new System.Windows.Forms.TextBox();
+            this.Send_Button = new System.Windows.Forms.Button();
+            this.Message_textbox = new System.Windows.Forms.TextBox();
+            this.Subject_Textbox = new System.Windows.Forms.TextBox();
+            this.To_Textbox = new System.Windows.Forms.TextBox();
+            this.Subject_Label = new System.Windows.Forms.Label();
+            this.Message_Label = new System.Windows.Forms.Label();
+            this.To_Label = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.inboxDataGridView)).BeginInit();
+            this.Newmail_groupBox.SuspendLayout();
             this.SuspendLayout();
             // 
             // newMail_btn
@@ -42,6 +52,7 @@
             resources.ApplyResources(this.newMail_btn, "newMail_btn");
             this.newMail_btn.Name = "newMail_btn";
             this.newMail_btn.UseVisualStyleBackColor = true;
+            this.newMail_btn.Click += new System.EventHandler(this.newMail_btn_Click);
             // 
             // inbox_btn
             // 
@@ -82,10 +93,71 @@
             this.inboxDataGridView.ShowEditingIcon = false;
             this.inboxDataGridView.CellDoubleClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.inboxDataGridView_CellContentDoubleClick);
             // 
+            // Newmail_groupBox
+            // 
+            this.Newmail_groupBox.Controls.Add(this.Status_textBox);
+            this.Newmail_groupBox.Controls.Add(this.Send_Button);
+            this.Newmail_groupBox.Controls.Add(this.Message_textbox);
+            this.Newmail_groupBox.Controls.Add(this.Subject_Textbox);
+            this.Newmail_groupBox.Controls.Add(this.To_Textbox);
+            this.Newmail_groupBox.Controls.Add(this.Subject_Label);
+            this.Newmail_groupBox.Controls.Add(this.Message_Label);
+            this.Newmail_groupBox.Controls.Add(this.To_Label);
+            resources.ApplyResources(this.Newmail_groupBox, "Newmail_groupBox");
+            this.Newmail_groupBox.Name = "Newmail_groupBox";
+            this.Newmail_groupBox.TabStop = false;
+            // 
+            // Status_textBox
+            // 
+            resources.ApplyResources(this.Status_textBox, "Status_textBox");
+            this.Status_textBox.Name = "Status_textBox";
+            this.Status_textBox.ReadOnly = true;
+            // 
+            // Send_Button
+            // 
+            resources.ApplyResources(this.Send_Button, "Send_Button");
+            this.Send_Button.Name = "Send_Button";
+            this.Send_Button.UseVisualStyleBackColor = true;
+            this.Send_Button.Click += new System.EventHandler(this.Send_Button_Click);
+            // 
+            // Message_textbox
+            // 
+            resources.ApplyResources(this.Message_textbox, "Message_textbox");
+            this.Message_textbox.Name = "Message_textbox";
+            this.Message_textbox.MouseClick += new System.Windows.Forms.MouseEventHandler(this.Textbox_MouseClick);
+            // 
+            // Subject_Textbox
+            // 
+            resources.ApplyResources(this.Subject_Textbox, "Subject_Textbox");
+            this.Subject_Textbox.Name = "Subject_Textbox";
+            this.Subject_Textbox.MouseClick += new System.Windows.Forms.MouseEventHandler(this.Textbox_MouseClick);
+            // 
+            // To_Textbox
+            // 
+            resources.ApplyResources(this.To_Textbox, "To_Textbox");
+            this.To_Textbox.Name = "To_Textbox";
+            this.To_Textbox.MouseClick += new System.Windows.Forms.MouseEventHandler(this.Textbox_MouseClick);
+            // 
+            // Subject_Label
+            // 
+            resources.ApplyResources(this.Subject_Label, "Subject_Label");
+            this.Subject_Label.Name = "Subject_Label";
+            // 
+            // Message_Label
+            // 
+            resources.ApplyResources(this.Message_Label, "Message_Label");
+            this.Message_Label.Name = "Message_Label";
+            // 
+            // To_Label
+            // 
+            resources.ApplyResources(this.To_Label, "To_Label");
+            this.To_Label.Name = "To_Label";
+            // 
             // Form1
             // 
             resources.ApplyResources(this, "$this");
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.Controls.Add(this.Newmail_groupBox);
             this.Controls.Add(this.inboxDataGridView);
             this.Controls.Add(this.sendReceive_btn);
             this.Controls.Add(this.outbot_btn);
@@ -93,6 +165,8 @@
             this.Controls.Add(this.newMail_btn);
             this.Name = "Form1";
             ((System.ComponentModel.ISupportInitialize)(this.inboxDataGridView)).EndInit();
+            this.Newmail_groupBox.ResumeLayout(false);
+            this.Newmail_groupBox.PerformLayout();
             this.ResumeLayout(false);
 
         }
@@ -104,6 +178,15 @@
         private System.Windows.Forms.Button outbot_btn;
         private System.Windows.Forms.Button sendReceive_btn;
         private System.Windows.Forms.DataGridView inboxDataGridView;
+        private System.Windows.Forms.GroupBox Newmail_groupBox;
+        private System.Windows.Forms.Button Send_Button;
+        private System.Windows.Forms.TextBox Message_textbox;
+        private System.Windows.Forms.TextBox Subject_Textbox;
+        private System.Windows.Forms.TextBox To_Textbox;
+        private System.Windows.Forms.Label Subject_Label;
+        private System.Windows.Forms.Label Message_Label;
+        private System.Windows.Forms.Label To_Label;
+        private System.Windows.Forms.TextBox Status_textBox;
     }
 }
 
