@@ -19,7 +19,8 @@ namespace EmailClient
         string ActiveWindow;
         DataTable table;
         DBHandler dbHandler;
-
+        ShowMail ShowMailWindow;
+        Dictionary<string, string> MailContent;
 
         public Form1()
         {
@@ -29,6 +30,7 @@ namespace EmailClient
         }
         void Form1_Load(object sender, EventArgs e)
         {
+            this.Text = "Super Mail Klient by Mathias & Nicolai";
 
         }
         
@@ -72,6 +74,15 @@ namespace EmailClient
             }
             Debug.WriteLine("Current Row: " + e.RowIndex.ToString());
             Debug.WriteLine("Mail-ID: " + inboxDataGridView.Rows[e.RowIndex].Cells["Mail-ID"].FormattedValue.ToString());
+            string mail_id = inboxDataGridView.Rows[e.RowIndex].Cells["Mail-ID"].FormattedValue.ToString();
+            
+            MailContent = new Dictionary<string,string>();
+            dbHandler = new DBHandler();
+
+            MailContent = dbHandler.GetFullMailFromMailID(mail_id);
+            ShowMailWindow = new ShowMail(MailContent["recipient"],MailContent["sender"], MailContent["subject"],MailContent["message"]);
+            ShowMailWindow.Show();
+
         }           
     }
 }

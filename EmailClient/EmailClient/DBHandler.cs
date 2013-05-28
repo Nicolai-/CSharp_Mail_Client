@@ -18,9 +18,9 @@ namespace EmailClient
         public DBHandler()
         {
             // Sql string to create database with a table to store inbox emails.
-            string sql = "CREATE TABLE IF NOT EXISTS mailInbox ('mail-id' INTEGER NOT NULL PRIMARY KEY AUTOINCREMENT, " +
-                "'sender' NVARCHAR(100) NOT NULL, " +
-                "'recipient' NVARCHAR(100) NOT NULL, " +
+            string sql = "CREATE TABLE IF NOT EXISTS mailInbox (mailid INTEGER NOT NULL PRIMARY KEY AUTOINCREMENT, " +
+                "sender NVARCHAR(100) NOT NULL, " +
+                "recipient NVARCHAR(100) NOT NULL, " +
                 "bc NVARCHAR(100), " +
                 "cc NVARCHAR(100), " +
                 "subject NVARCHAR(500), " +
@@ -92,7 +92,9 @@ namespace EmailClient
             SenderSubject.Columns.Add("Mail-ID",typeof(int));
             SenderSubject.Columns.Add("From", typeof(string));
             SenderSubject.Columns.Add("Subject", typeof(string));
-            string sql = "SELECT [mail-id],sender,subject from mailInbox";
+
+
+            string sql = "SELECT mailid,sender,subject from mailInbox";
             SQLiteCommand cmd = new SQLiteCommand(sql, DbConn);
             SQLiteDataReader reader = cmd.ExecuteReader();
             while (reader.Read())
@@ -105,14 +107,15 @@ namespace EmailClient
             return SenderSubject;
         }
 
-        public Dictionary<string, string> GetFullMailFromMailID(int mail_id)
+        public Dictionary<string, string> GetFullMailFromMailID(string mail_id)
         {
             Dictionary<string, string> FullMail = new Dictionary<string, string>();
 
-            string sql = "SELECT sender,recipient,subject,message FROM mailInbox WHERE [mail-id]=@mail-id";
+            string sql = "SELECT sender,recipient,subject,message FROM mailInbox WHERE mailid=@mailid";
             SQLiteCommand cmd = new SQLiteCommand(sql, DbConn);
             cmd.CommandText = sql;
-            cmd.Parameters.AddWithValue("@mail-id", mail_id);
+            cmd.Parameters.AddWithValue("@mailid", mail_id);
+            Debug.WriteLine(cmd.CommandText.ToString());
             SQLiteDataReader reader = cmd.ExecuteReader();
             while (reader.Read())
             {
