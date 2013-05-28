@@ -47,18 +47,20 @@ namespace EmailClient
 
             /* Get all Subjects and Senders from DB */
             dbHandler = new DBHandler();
-            table = dbHandler.GetAllSendersSubjects();
-            inboxDataGridView.DataSource = table;
+            inboxDataGridView.DataSource = dbHandler.GetAllSendersSubjects();
         }
 
         private void sendReceive_btn_Click(object sender, EventArgs e)
         {
+            dbHandler = new DBHandler();
+
             List<Message> mails = new List<Message>();
             mails = POPClient.GetAllMails(Setting.Default.pop3_server, Setting.Default.pop3_port, Setting.Default.ssl, Setting.Default.username, Setting.Default.password);
             foreach (Message mail in mails)
             {
                 dbHandler.InsertMail(mail);
             }
+
         }
 
         private void inboxDataGridView_CellContentDoubleClick(object sender, DataGridViewCellEventArgs e)
